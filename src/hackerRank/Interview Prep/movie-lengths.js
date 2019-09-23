@@ -32,10 +32,12 @@ const moviesForPlaneRideThree = (flightTime, movies) => {
     movieObj[diff] = true
     console.log(movieObj)
 
-    if(diff == movies[i]) return true
+    if(movieObj[movies[i]]) return true
 
   }
   return false
 }
+
+//Now the programme will only look through each movie that it's already seen each time and return once it has found a match. Stopping any unnecessary cycles through the array.
 const movieArray = [80, 50, 80]
 const flightTime = 160
